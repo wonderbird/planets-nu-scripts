@@ -13,16 +13,5 @@
 // @match        https://*.planets.nu/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=planets.nu
 // @grant        none
+// @require      http://localhost:8080/app/main.js
 // ==/UserScript==
-
-(function() {
-    'use strict';
-
-    console.log(scriptInfoText());
-})();
-
-function scriptInfoText() {
-    return "Welcome to Stefan's Planets.nu scripts";
-}
-
-module.exports = scriptInfoText;
