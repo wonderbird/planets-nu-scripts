@@ -1,9 +1,8 @@
 # Node.js Starter
 
-![Build Status Badge](https://github.com/wonderbird/nodejs-starter/workflows/Node.js%20CI/badge.svg)
+![Build Status Badge](https://github.com/wonderbird/planets-nu-scripts/workflows/Node.js%20CI/badge.svg)
 
-This repo is a template for new Node.js projects. Simply fork it :-)
-If you have forked it already, see https://deanmalone.net/post/how-to-fork-your-own-repo-on-github/ .
+User scripts to enhance the experience of the https://planets.nu strategy game.
 
 ## Development
 

@@ -1,7 +1,7 @@
 {
-  "name": "experiment-with-mob-sh",
-  "version": "1.0.0",
-  "description": "Some experiments with the https://mob.sh experience",
+  "name": "planets-nu-scripts",
+  "version": "0.1.0",
+  "description": "User scripts to enhance the experience of the https://planets.nu strategy game.",
   "private": "true",
   "main": "app/main.js",
   "scripts": {
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wonderbird/experiment-with-mob-sh.git"
+    "url": "git+https://github.com/wonderbird/planets-nu-scripts.git"
   },
   "author": "Stefan Boos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wonderbird/experiment-with-mob-sh/issues"
+    "url": "https://github.com/wonderbird/planets-nu-scripts/issues"
   },
-  "homepage": "https://github.com/wonderbird/experiment-with-mob-sh#readme",
+  "homepage": "https://github.com/wonderbird/planets-nu-scripts#readme",
   "email": "kontakt@boos.systems",
   "dependencies": {},
   "devDependencies": {
