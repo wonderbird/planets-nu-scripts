@@ -1,0 +1,40 @@
+{
+  "name": "experiment-with-mob-sh",
+  "version": "1.0.0",
+  "description": "Some experiments with the https://mob.sh experience",
+  "private": "true",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "node app/main.js",
+    "test": "nyc --reporter=text mocha --recursive",
+    "test:unit": "mocha --recursive test/app",
+    "test:watch": "mocha \"test/**/*.js\" --watch --watch-extensions js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jex .",
+    "complexity:app": "complexity-report-html app && mv .complexity-report/report.html .complexity-report/app.html",
+    "complexity:test": "complexity-report-html test && mv .complexity-report/report.html .complexity-report/test.html",
+    "complexity": "npm run complexity:app; npm run complexity:test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonderbird/experiment-with-mob-sh.git"
+  },
+  "author": "Stefan Boos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonderbird/experiment-with-mob-sh/issues"
+  },
+  "homepage": "https://github.com/wonderbird/experiment-with-mob-sh#readme",
+  "email": "kontakt@boos.systems",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "complexity-report-html": "0.0.3",
+    "eslint": "^8.43.0",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.1.2",
+    "sinon-chai": "^3.7.0"
+  }
+}
