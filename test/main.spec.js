@@ -1,21 +1,21 @@
-var chai = require('chai');
+let chai = require('chai');
 //var sinon = require('sinon');
-var sinonChai = require('sinon-chai');
+let sinonChai = require('sinon-chai');
 
 chai.should();
 chai.use(sinonChai);
 
-var main = require('../app/main');
+let scriptInfoText = require('../app/main');
 
 describe('main.js',
     function() {
 
-        describe('main',
+        describe('scriptInfoText',
             function () {
-                it('should return "Hello World"',
+                it('returns "Welcome to Stefan\'s Planets.nu scripts"',
                     function() {
-                        var actual = main();
-                        actual.should.equal('Hello World');
+                        let actual = scriptInfoText();
+                        actual.should.equal('Welcome to Stefan\'s Planets.nu scripts');
                     });
             });
     });
