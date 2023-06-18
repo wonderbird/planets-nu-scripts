@@ -13,5 +13,5 @@
 // @match        https://*.planets.nu/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=planets.nu
 // @grant        none
-// @require      http://localhost:8080/app/main.js
+// @require      http://localhost:8080/dist/main.js
 // ==/UserScript==

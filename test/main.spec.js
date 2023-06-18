@@ -5,9 +5,9 @@ let sinonChai = require('sinon-chai');
 chai.should();
 chai.use(sinonChai);
 
-let scriptInfoText = require('../app/main');
+let scriptInfoText = require('../src/index');
 
-describe('main.js',
+describe('index.js',
     function() {
 
         describe('scriptInfoText',

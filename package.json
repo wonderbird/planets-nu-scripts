@@ -3,17 +3,16 @@
   "version": "0.1.0",
   "description": "User scripts to enhance the experience of the https://planets.nu strategy game.",
   "private": "true",
-  "main": "app/main.js",
   "scripts": {
     "start": "$(npm bin)/http-server -c-1",
     "test": "nyc --reporter=text mocha --recursive",
-    "test:unit": "mocha --recursive test/app",
+    "test:unit": "mocha --recursive test/src",
     "test:watch": "mocha \"test/**/*.js\" --watch --watch-extensions js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .js,.jex .",
-    "complexity:app": "complexity-report-html app && mv .complexity-report/report.html .complexity-report/app.html",
+    "complexity:src": "complexity-report-html src && mv .complexity-report/report.html .complexity-report/src.html",
     "complexity:test": "complexity-report-html test && mv .complexity-report/report.html .complexity-report/test.html",
-    "complexity": "npm run complexity:app; npm run complexity:test"
+    "complexity": "npm run complexity:src; npm run complexity:test"
   },
   "repository": {
     "type": "git",
@@ -35,6 +34,8 @@
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "sinon": "^15.1.2",
-    "sinon-chai": "^3.7.0"
+    "sinon-chai": "^3.7.0",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
   }
 }
